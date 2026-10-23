@@ -1,0 +1,660 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>cordiccart2pol</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.160</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>38</Best-caseLatency>
+            <Average-caseLatency>38</Average-caseLatency>
+            <Worst-caseLatency>38</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.380 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.380 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.380 us</Worst-caseRealTimeLatency>
+            <Interval-min>39</Interval-min>
+            <Interval-max>39</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>cordiccart2pol.cpp:9</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <FF>894</FF>
+            <LUT>1754</LUT>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>cordiccart2pol</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>cordiccart2pol</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>cordiccart2pol</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>cordiccart2pol</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_cordiccart2pol_Pipeline_VITIS_LOOP_38_1_fu_136</InstName>
+                    <ModuleName>cordiccart2pol_Pipeline_VITIS_LOOP_38_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>136</ID>
+                    <BindInstances>icmp_ln41_fu_168_p2 ashr_ln56_fu_147_p2 shr_i_i_i9957_fu_153_p2 x_1_fu_177_p2 y_1_fu_181_p2 add_ln49_fu_185_p2 ashr_ln53_fu_159_p2 x_2_fu_191_p2 y_2_fu_195_p2 sub_ln58_fu_199_p2 storemerge_out y_fu_214_p3 x_6_out i_idx_fu_231_p2 icmp_ln38_fu_236_p2 angles_U</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>icmp_ln25_fu_155_p2 x_4_fu_161_p2 y_3_fu_167_p2 select_ln25_fu_173_p3 y_5_fu_181_p3 x_5_fu_189_p3 storemerge6_ph_fu_197_p3 x_3_fu_206_p3 y_4_fu_215_p3 add_ln65_1_fu_319_p2 add_ln65_3_fu_363_p2 control_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>cordiccart2pol_Pipeline_VITIS_LOOP_38_1</Name>
+            <Loops>
+                <VITIS_LOOP_38_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.160</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>33</Best-caseLatency>
+                    <Average-caseLatency>33</Average-caseLatency>
+                    <Worst-caseLatency>33</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.330 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.330 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.330 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>32</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_38_1>
+                        <Name>VITIS_LOOP_38_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>16</TripCount>
+                        <Latency>31</Latency>
+                        <AbsoluteTimeLatency>0.310 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_38_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>cordiccart2pol.cpp:38</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_38_1>
+                            <Name>VITIS_LOOP_38_1</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>cordiccart2pol.cpp:38</SourceLocation>
+                        </VITIS_LOOP_38_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>298</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>791</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln41_fu_168_p2" SOURCE="cordiccart2pol.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln41" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ashr" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="ashr" PRAGMA="" RTLNAME="ashr_ln56_fu_147_p2" SOURCE="cordiccart2pol.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="ashr_ln56" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op lshr" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="lshr" PRAGMA="" RTLNAME="shr_i_i_i9957_fu_153_p2" SOURCE="cordiccart2pol.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="shr_i_i_i9957" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="add" PRAGMA="" RTLNAME="x_1_fu_177_p2" SOURCE="cordiccart2pol.cpp:44" STORAGESUBTYPE="" URAM="0" VARIABLE="x_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="sub" PRAGMA="" RTLNAME="y_1_fu_181_p2" SOURCE="cordiccart2pol.cpp:47" STORAGESUBTYPE="" URAM="0" VARIABLE="y_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_185_p2" SOURCE="cordiccart2pol.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ashr" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="ashr" PRAGMA="" RTLNAME="ashr_ln53_fu_159_p2" SOURCE="cordiccart2pol.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="ashr_ln53" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="sub" PRAGMA="" RTLNAME="x_2_fu_191_p2" SOURCE="cordiccart2pol.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="x_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="add" PRAGMA="" RTLNAME="y_2_fu_195_p2" SOURCE="cordiccart2pol.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="y_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln58_fu_199_p2" SOURCE="cordiccart2pol.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln58" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="select" PRAGMA="" RTLNAME="storemerge_out" SOURCE="cordiccart2pol.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="storemerge" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="select" PRAGMA="" RTLNAME="y_fu_214_p3" SOURCE="cordiccart2pol.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="y" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="select" PRAGMA="" RTLNAME="x_6_out" SOURCE="cordiccart2pol.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="tempX" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="add" PRAGMA="" RTLNAME="i_idx_fu_231_p2" SOURCE="cordiccart2pol.cpp:38" STORAGESUBTYPE="" URAM="0" VARIABLE="i_idx" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_38_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln38_fu_236_p2" SOURCE="cordiccart2pol.cpp:38" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln38" VISIBLE="false"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="angles_U" SOURCE="" STORAGESIZE="29 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="angles" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>cordiccart2pol</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.160</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>38</Best-caseLatency>
+                    <Average-caseLatency>38</Average-caseLatency>
+                    <Worst-caseLatency>38</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.380 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.380 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.380 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>39</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>cordiccart2pol.cpp:9</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>894</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1754</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln25_fu_155_p2" SOURCE="cordiccart2pol.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="x_4_fu_161_p2" SOURCE="cordiccart2pol.cpp:31" STORAGESUBTYPE="" URAM="0" VARIABLE="x_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="y_3_fu_167_p2" SOURCE="cordiccart2pol.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="y_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln25_fu_173_p3" SOURCE="cordiccart2pol.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="y_5_fu_181_p3" SOURCE="cordiccart2pol.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="y_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="x_5_fu_189_p3" SOURCE="cordiccart2pol.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="x_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="storemerge6_ph_fu_197_p3" SOURCE="cordiccart2pol.cpp:21" STORAGESUBTYPE="" URAM="0" VARIABLE="storemerge6_ph" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="x_3_fu_206_p3" SOURCE="cordiccart2pol.cpp:21" STORAGESUBTYPE="" URAM="0" VARIABLE="x_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="y_4_fu_215_p3" SOURCE="cordiccart2pol.cpp:21" STORAGESUBTYPE="" URAM="0" VARIABLE="y_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln65_1_fu_319_p2" SOURCE="cordiccart2pol.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln65_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln65_3_fu_363_p2" SOURCE="cordiccart2pol.cpp:65" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln65_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="x" index="0" direction="in" srcType="ap_fixed&lt;32, 3, AP_TRN, AP_WRAP, 0&gt;" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="x" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="y" index="1" direction="in" srcType="ap_fixed&lt;32, 3, AP_TRN, AP_WRAP, 0&gt;" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="y" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="r" index="2" direction="out" srcType="ap_fixed&lt;32, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="r" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="r_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="theta" index="3" direction="out" srcType="ap_fixed&lt;32, 3, AP_TRN, AP_WRAP, 0&gt;*" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="theta" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="theta_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+            <ports>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="x" access="W" description="Data signal of x" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="x" access="W" description="Bit 31 to 0 of x"/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="y" access="W" description="Data signal of y" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="y" access="W" description="Bit 31 to 0 of y"/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="r" access="R" description="Data signal of r" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="r" access="R" description="Bit 31 to 0 of r"/>
+                    </fields>
+                </register>
+                <register offset="0x24" name="r_ctrl" access="R" description="Control signal of r" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="r_ap_vld" access="R" description="Control signal r_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="theta" access="R" description="Data signal of theta" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="theta" access="R" description="Bit 31 to 0 of theta"/>
+                    </fields>
+                </register>
+                <register offset="0x34" name="theta_ctrl" access="R" description="Control signal of theta" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="theta_ap_vld" access="R" description="Control signal theta_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="x"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="y"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="r"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48" argName="theta"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_control">32, 6, 16, 0</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_control">x, 0x10, 32, W, Data signal of x, </column>
+                    <column name="s_axi_control">y, 0x18, 32, W, Data signal of y, </column>
+                    <column name="s_axi_control">r, 0x20, 32, R, Data signal of r, </column>
+                    <column name="s_axi_control">r_ctrl, 0x24, 32, R, Control signal of r, 0=r_ap_vld</column>
+                    <column name="s_axi_control">theta, 0x30, 32, R, Data signal of theta, </column>
+                    <column name="s_axi_control">theta_ctrl, 0x34, 32, R, Control signal of theta, 0=theta_ap_vld</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="x">in, ap_fixed&lt;32 3 AP_TRN AP_WRAP 0&gt;</column>
+                    <column name="y">in, ap_fixed&lt;32 3 AP_TRN AP_WRAP 0&gt;</column>
+                    <column name="r">out, ap_fixed&lt;32 3 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="theta">out, ap_fixed&lt;32 3 AP_TRN AP_WRAP 0&gt;*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="x">s_axi_control, register, name=x offset=0x10 range=32</column>
+                    <column name="y">s_axi_control, register, name=y offset=0x18 range=32</column>
+                    <column name="r">s_axi_control, register, name=r offset=0x20 range=32</column>
+                    <column name="r">s_axi_control, register, name=r_ctrl offset=0x24 range=32</column>
+                    <column name="theta">s_axi_control, register, name=theta offset=0x30 range=32</column>
+                    <column name="theta">s_axi_control, register, name=theta_ctrl offset=0x34 range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="cordiccart2pol.cpp:11" status="valid" parentFunction="cordiccart2pol" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
+        <Pragma type="interface" location="cordiccart2pol.cpp:12" status="valid" parentFunction="cordiccart2pol" variable="x" isDirective="0" options="mode=s_axilite port=x"/>
+        <Pragma type="interface" location="cordiccart2pol.cpp:13" status="valid" parentFunction="cordiccart2pol" variable="y" isDirective="0" options="mode=s_axilite port=y"/>
+        <Pragma type="interface" location="cordiccart2pol.cpp:14" status="valid" parentFunction="cordiccart2pol" variable="r" isDirective="0" options="mode=s_axilite port=r"/>
+        <Pragma type="interface" location="cordiccart2pol.cpp:15" status="valid" parentFunction="cordiccart2pol" variable="theta" isDirective="0" options="mode=s_axilite port=theta"/>
+    </PragmaReport>
+</profile>
+

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "cordiccart2pol.cpp",
+    "fileloc": 9,
+    "instructions": 82,
+    "loads": {
+      "G": 1
+    },
+    "name": "cordiccart2pol",
+    "stores": {
+      "T": 3
+    },
+    "total_instructions": 82
+  }
+}

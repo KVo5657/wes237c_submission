@@ -1,0 +1,204 @@
+<ENTRY>
+{
+ "thisFile": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/cordiccart2pol.comp.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957020",
+ "buildStep": {
+  "cmdId": "395a4b70-b27c-42a7-b7f6-c56bea8b20b4",
+  "name": "vitis-run",
+  "logFile": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957021",
+ "status": {
+  "cmdId": "395a4b70-b27c-42a7-b7f6-c56bea8b20b4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957021",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cordiccart2pol",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957022",
+ "buildStep": {
+  "cmdId": "d4433afe-ddf7-4be9-8751-43bed911620c",
+  "name": "csynth_design",
+  "logFile": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957023",
+ "status": {
+  "cmdId": "d4433afe-ddf7-4be9-8751-43bed911620c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957023",
+ "report": {
+  "path": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957024",
+ "report": {
+  "path": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct 22 23:12:37 2026",
+ "timestampMillis": "1792735957025",
+ "report": {
+  "path": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct 22 23:12:55 2026",
+ "timestampMillis": "1792735975531",
+ "report": {
+  "path": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct 22 23:12:55 2026",
+ "timestampMillis": "1792735975534",
+ "report": {
+  "path": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Oct 22 23:12:55 2026",
+ "timestampMillis": "1792735975535",
+ "report": {
+  "path": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:12:55 2026",
+ "timestampMillis": "1792735975536",
+ "status": {
+  "cmdId": "d4433afe-ddf7-4be9-8751-43bed911620c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:12:55 2026",
+ "timestampMillis": "1792735975556",
+ "status": {
+  "cmdId": "395a4b70-b27c-42a7-b7f6-c56bea8b20b4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

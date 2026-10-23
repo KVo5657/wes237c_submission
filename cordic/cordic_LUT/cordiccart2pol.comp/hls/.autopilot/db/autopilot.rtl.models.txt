@@ -1,0 +1,3 @@
+cordiccart2pol_lut_radius_bits_ROM_AUTO_1R
+cordiccart2pol_lut_theta_bits_ROM_AUTO_1R
+cordiccart2pol

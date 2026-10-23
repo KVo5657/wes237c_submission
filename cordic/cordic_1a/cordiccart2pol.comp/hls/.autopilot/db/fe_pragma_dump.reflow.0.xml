@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="cordiccart2pol.cpp" line="16" pragmaType="interface" parentfunction="cordiccart2pol" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cordiccart2pol.cpp" line="17" pragmaType="interface" parentfunction="cordiccart2pol" mode="s_axilite" port="x" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cordiccart2pol.cpp" line="18" pragmaType="interface" parentfunction="cordiccart2pol" mode="s_axilite" port="y" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cordiccart2pol.cpp" line="19" pragmaType="interface" parentfunction="cordiccart2pol" mode="s_axilite" port="r" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cordiccart2pol.cpp" line="20" pragmaType="interface" parentfunction="cordiccart2pol" mode="s_axilite" port="theta" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

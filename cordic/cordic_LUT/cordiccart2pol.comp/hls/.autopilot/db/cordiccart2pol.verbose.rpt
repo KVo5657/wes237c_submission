@@ -1,0 +1,695 @@
+
+
+================================================================
+== Vitis HLS Report for 'cordiccart2pol'
+================================================================
+* Date:           Thu Oct 22 04:47:02 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        cordiccart2pol.comp
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.254 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        1|  10.000 ns|  10.000 ns|    2|    2|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       -|      -|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |       64|    -|       0|      0|    -|
+|Multiplexer      |        -|    -|       0|     14|    -|
+|Register         |        -|    -|       2|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       64|    0|       2|     14|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       22|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-------------------+-----------------------------+---------+---+----+-----+-------+-----+------+-------------+
+    |       Memory      |            Module           | BRAM_18K| FF| LUT| URAM| Words | Bits| Banks| W*Bits*Banks|
+    +-------------------+-----------------------------+---------+---+----+-----+-------+-----+------+-------------+
+    |lut_radius_bits_U  |lut_radius_bits_ROM_AUTO_1R  |       32|  0|   0|    0|  65536|    8|     1|       524288|
+    |lut_theta_bits_U   |lut_theta_bits_ROM_AUTO_1R   |       32|  0|   0|    0|  65536|    8|     1|       524288|
+    +-------------------+-----------------------------+---------+---+----+-----+-------+-----+------+-------------+
+    |Total              |                             |       64|  0|   0|    0| 131072|   16|     2|      1048576|
+    +-------------------+-----------------------------+---------+---+----+-----+-------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  14|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  14|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  2|   0|    2|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  2|   0|    2|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+----------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++--------------+-----+-----+------------+----------------+--------------+
+|ap_clk        |   in|    1|  ap_ctrl_hs|  cordiccart2pol|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  cordiccart2pol|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|  cordiccart2pol|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  cordiccart2pol|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  cordiccart2pol|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  cordiccart2pol|  return value|
+|x             |   in|    8|     ap_none|               x|        scalar|
+|y             |   in|    8|     ap_none|               y|        scalar|
+|r             |  out|    8|      ap_vld|               r|       pointer|
+|r_ap_vld      |  out|    1|      ap_vld|               r|       pointer|
+|theta         |  out|    8|      ap_vld|           theta|       pointer|
+|theta_ap_vld  |  out|    1|      ap_vld|           theta|       pointer|
++--------------+-----+-----+------------+----------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.25>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%y_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %y" [cordiccart2pol.cpp:34]   --->   Operation 3 'read' 'y_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%x_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %x" [cordiccart2pol.cpp:34]   --->   Operation 4 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%index = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i8.i8, i8 %x_read, i8 %y_read" [cordiccart2pol.cpp:53]   --->   Operation 5 'bitconcatenate' 'index' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln57 = zext i16 %index" [cordiccart2pol.cpp:57]   --->   Operation 6 'zext' 'zext_ln57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%lut_radius_bits_addr = getelementptr i8 %lut_radius_bits, i64 0, i64 %zext_ln57" [cordiccart2pol.cpp:57]   --->   Operation 7 'getelementptr' 'lut_radius_bits_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (3.25ns)   --->   "%radius_bits = load i16 %lut_radius_bits_addr" [cordiccart2pol.cpp:57]   --->   Operation 8 'load' 'radius_bits' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 65536> <ROM>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%lut_theta_bits_addr = getelementptr i8 %lut_theta_bits, i64 0, i64 %zext_ln57" [cordiccart2pol.cpp:58]   --->   Operation 9 'getelementptr' 'lut_theta_bits_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [2/2] (3.25ns)   --->   "%theta_bits = load i16 %lut_theta_bits_addr" [cordiccart2pol.cpp:58]   --->   Operation 10 'load' 'theta_bits' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 65536> <ROM>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%spectopmodule_ln34 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [cordiccart2pol.cpp:34]   --->   Operation 11 'spectopmodule' 'spectopmodule_ln34' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %x"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %x, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %y"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %y, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %r"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %theta"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %theta, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/2] ( I:3.25ns O:3.25ns )   --->   "%radius_bits = load i16 %lut_radius_bits_addr" [cordiccart2pol.cpp:57]   --->   Operation 20 'load' 'radius_bits' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 65536> <ROM>
+ST_2 : Operation 21 [1/2] ( I:3.25ns O:3.25ns )   --->   "%theta_bits = load i16 %lut_theta_bits_addr" [cordiccart2pol.cpp:58]   --->   Operation 21 'load' 'theta_bits' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 94 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 8> <Depth = 65536> <ROM>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %r, i8 %radius_bits" [cordiccart2pol.cpp:72]   --->   Operation 22 'write' 'write_ln72' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%write_ln73 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %theta, i8 %theta_bits" [cordiccart2pol.cpp:73]   --->   Operation 23 'write' 'write_ln73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln74 = ret" [cordiccart2pol.cpp:74]   --->   Operation 24 'ret' 'ret_ln74' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ x]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ y]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ r]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ theta]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ lut_radius_bits]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ lut_theta_bits]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+y_read               (read          ) [ 000]
+x_read               (read          ) [ 000]
+index                (bitconcatenate) [ 000]
+zext_ln57            (zext          ) [ 000]
+lut_radius_bits_addr (getelementptr ) [ 001]
+lut_theta_bits_addr  (getelementptr ) [ 001]
+spectopmodule_ln34   (spectopmodule ) [ 000]
+specbitsmap_ln0      (specbitsmap   ) [ 000]
+specinterface_ln0    (specinterface ) [ 000]
+specbitsmap_ln0      (specbitsmap   ) [ 000]
+specinterface_ln0    (specinterface ) [ 000]
+specbitsmap_ln0      (specbitsmap   ) [ 000]
+specinterface_ln0    (specinterface ) [ 000]
+specbitsmap_ln0      (specbitsmap   ) [ 000]
+specinterface_ln0    (specinterface ) [ 000]
+radius_bits          (load          ) [ 000]
+theta_bits           (load          ) [ 000]
+write_ln72           (write         ) [ 000]
+write_ln73           (write         ) [ 000]
+ret_ln74             (ret           ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="x">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="x"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="y">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="y"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="r">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="r"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="theta">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="theta"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="lut_radius_bits">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="lut_radius_bits"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="lut_theta_bits">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="lut_theta_bits"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i16.i8.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i8P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1004" name="y_read_read_fu_36">
+<pin_list>
+<pin id="37" dir="0" index="0" bw="8" slack="0"/>
+<pin id="38" dir="0" index="1" bw="8" slack="0"/>
+<pin id="39" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="y_read/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="x_read_read_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="8" slack="0"/>
+<pin id="44" dir="0" index="1" bw="8" slack="0"/>
+<pin id="45" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="x_read/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="write_ln72_write_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="0" slack="0"/>
+<pin id="50" dir="0" index="1" bw="8" slack="0"/>
+<pin id="51" dir="0" index="2" bw="8" slack="0"/>
+<pin id="52" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln72/2 "/>
+</bind>
+</comp>
+
+<comp id="55" class="1004" name="write_ln73_write_fu_55">
+<pin_list>
+<pin id="56" dir="0" index="0" bw="0" slack="0"/>
+<pin id="57" dir="0" index="1" bw="8" slack="0"/>
+<pin id="58" dir="0" index="2" bw="8" slack="0"/>
+<pin id="59" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln73/2 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="lut_radius_bits_addr_gep_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="8" slack="0"/>
+<pin id="64" dir="0" index="1" bw="1" slack="0"/>
+<pin id="65" dir="0" index="2" bw="16" slack="0"/>
+<pin id="66" dir="1" index="3" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="lut_radius_bits_addr/1 "/>
+</bind>
+</comp>
+
+<comp id="69" class="1004" name="grp_access_fu_69">
+<pin_list>
+<pin id="70" dir="0" index="0" bw="16" slack="0"/>
+<pin id="71" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="72" dir="0" index="2" bw="0" slack="2147483647"/>
+<pin id="73" dir="1" index="3" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="radius_bits/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="lut_theta_bits_addr_gep_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="8" slack="0"/>
+<pin id="78" dir="0" index="1" bw="1" slack="0"/>
+<pin id="79" dir="0" index="2" bw="16" slack="0"/>
+<pin id="80" dir="1" index="3" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="lut_theta_bits_addr/1 "/>
+</bind>
+</comp>
+
+<comp id="83" class="1004" name="grp_access_fu_83">
+<pin_list>
+<pin id="84" dir="0" index="0" bw="16" slack="0"/>
+<pin id="85" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="86" dir="0" index="2" bw="0" slack="2147483647"/>
+<pin id="87" dir="1" index="3" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="theta_bits/1 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="index_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="16" slack="0"/>
+<pin id="92" dir="0" index="1" bw="8" slack="0"/>
+<pin id="93" dir="0" index="2" bw="8" slack="0"/>
+<pin id="94" dir="1" index="3" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="index/1 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="zext_ln57_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="16" slack="0"/>
+<pin id="100" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln57/1 "/>
+</bind>
+</comp>
+
+<comp id="104" class="1005" name="lut_radius_bits_addr_reg_104">
+<pin_list>
+<pin id="105" dir="0" index="0" bw="16" slack="1"/>
+<pin id="106" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="lut_radius_bits_addr "/>
+</bind>
+</comp>
+
+<comp id="109" class="1005" name="lut_theta_bits_addr_reg_109">
+<pin_list>
+<pin id="110" dir="0" index="0" bw="16" slack="1"/>
+<pin id="111" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="lut_theta_bits_addr "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="40"><net_src comp="12" pin="0"/><net_sink comp="36" pin=0"/></net>
+
+<net id="41"><net_src comp="2" pin="0"/><net_sink comp="36" pin=1"/></net>
+
+<net id="46"><net_src comp="12" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="47"><net_src comp="0" pin="0"/><net_sink comp="42" pin=1"/></net>
+
+<net id="53"><net_src comp="34" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="54"><net_src comp="4" pin="0"/><net_sink comp="48" pin=1"/></net>
+
+<net id="60"><net_src comp="34" pin="0"/><net_sink comp="55" pin=0"/></net>
+
+<net id="61"><net_src comp="6" pin="0"/><net_sink comp="55" pin=1"/></net>
+
+<net id="67"><net_src comp="8" pin="0"/><net_sink comp="62" pin=0"/></net>
+
+<net id="68"><net_src comp="16" pin="0"/><net_sink comp="62" pin=1"/></net>
+
+<net id="74"><net_src comp="69" pin="3"/><net_sink comp="48" pin=2"/></net>
+
+<net id="75"><net_src comp="62" pin="3"/><net_sink comp="69" pin=0"/></net>
+
+<net id="81"><net_src comp="10" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="82"><net_src comp="16" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="88"><net_src comp="83" pin="3"/><net_sink comp="55" pin=2"/></net>
+
+<net id="89"><net_src comp="76" pin="3"/><net_sink comp="83" pin=0"/></net>
+
+<net id="95"><net_src comp="14" pin="0"/><net_sink comp="90" pin=0"/></net>
+
+<net id="96"><net_src comp="42" pin="2"/><net_sink comp="90" pin=1"/></net>
+
+<net id="97"><net_src comp="36" pin="2"/><net_sink comp="90" pin=2"/></net>
+
+<net id="101"><net_src comp="90" pin="3"/><net_sink comp="98" pin=0"/></net>
+
+<net id="102"><net_src comp="98" pin="1"/><net_sink comp="62" pin=2"/></net>
+
+<net id="103"><net_src comp="98" pin="1"/><net_sink comp="76" pin=2"/></net>
+
+<net id="107"><net_src comp="62" pin="3"/><net_sink comp="104" pin=0"/></net>
+
+<net id="108"><net_src comp="104" pin="1"/><net_sink comp="69" pin=0"/></net>
+
+<net id="112"><net_src comp="76" pin="3"/><net_sink comp="109" pin=0"/></net>
+
+<net id="113"><net_src comp="109" pin="1"/><net_sink comp="83" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: r | {2 }
+	Port: theta | {2 }
+ - Input state : 
+	Port: cordiccart2pol : x | {1 }
+	Port: cordiccart2pol : y | {1 }
+	Port: cordiccart2pol : lut_radius_bits | {1 2 }
+	Port: cordiccart2pol : lut_theta_bits | {1 2 }
+  - Chain level:
+	State 1
+		zext_ln57 : 1
+		lut_radius_bits_addr : 2
+		radius_bits : 3
+		lut_theta_bits_addr : 2
+		theta_bits : 3
+	State 2
+		write_ln72 : 1
+		write_ln73 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|------------------------|
+| Operation|     Functional Unit    |
+|----------|------------------------|
+|   read   |    y_read_read_fu_36   |
+|          |    x_read_read_fu_42   |
+|----------|------------------------|
+|   write  | write_ln72_write_fu_48 |
+|          | write_ln73_write_fu_55 |
+|----------|------------------------|
+|bitconcatenate|       index_fu_90      |
+|----------|------------------------|
+|   zext   |     zext_ln57_fu_98    |
+|----------|------------------------|
+|   Total  |                        |
+|----------|------------------------|
+
+Memories:
++---------------+--------+--------+--------+
+|               |  BRAM  |   FF   |   LUT  |
++---------------+--------+--------+--------+
+|lut_radius_bits|   32   |    0   |    0   |
+| lut_theta_bits|   32   |    0   |    0   |
++---------------+--------+--------+--------+
+|     Total     |   64   |    0   |    0   |
++---------------+--------+--------+--------+
+
+* Register list:
++----------------------------+--------+
+|                            |   FF   |
++----------------------------+--------+
+|lut_radius_bits_addr_reg_104|   16   |
+| lut_theta_bits_addr_reg_109|   16   |
++----------------------------+--------+
+|            Total           |   32   |
++----------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|------------------|------|------|------|--------||---------||---------||---------|
+|       Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|------------------|------|------|------|--------||---------||---------||---------|
+| grp_access_fu_69 |  p0  |   2  |  16  |   32   ||    0    ||    9    |
+| grp_access_fu_83 |  p0  |   2  |  16  |   32   ||    0    ||    9    |
+|------------------|------|------|------|--------||---------||---------||---------|
+|       Total      |      |      |      |   64   ||  3.176  ||    0    ||    18   |
+|------------------|------|------|------|--------||---------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |  BRAM  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |    -   |    -   |    -   |    -   |
+|   Memory  |   64   |    -   |    0   |    0   |
+|Multiplexer|    -   |    3   |    0   |   18   |
+|  Register |    -   |    -   |   32   |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |   64   |    3   |   32   |   18   |
++-----------+--------+--------+--------+--------+

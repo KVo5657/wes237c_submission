@@ -1,0 +1,73 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_cordiccart2pol.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: ./cordiccart2pol_lut.h, Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_cordiccart2pol.pp.0.cpp
+    DebugLoc:        { File: /home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: /home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp, 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_cordiccart2pol.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: ./cordiccart2pol_lut.h, Line: 4106, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_cordiccart2pol.pp.0.cpp
+    DebugLoc:        { File: /home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cordiccart2pol.cpp, Line: 35, Column: 0 }
+Function:        _Z14cordiccart2pol8ap_fixedILi8ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_PS2_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_64_2
+  - String:          ''' ('
+  - LoopLoc:         'cordiccart2pol.cpp:64:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cordiccart2pol
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cordiccart2pol.cpp, Line: 35, Column: 0 }
+Function:        _Z14cordiccart2pol8ap_fixedILi8ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EES2_PS2_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_49_1
+  - String:          ''' ('
+  - LoopLoc:         'cordiccart2pol.cpp:49:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cordiccart2pol
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_cordiccart2pol_ir
+Args:            
+  - Callee:          'cordiccart2pol(ap_fixed<8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: cordiccart2pol.cpp, Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_cordiccart2pol_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

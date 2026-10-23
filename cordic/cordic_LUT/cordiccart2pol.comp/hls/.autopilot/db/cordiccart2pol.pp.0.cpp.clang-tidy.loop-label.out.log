@@ -1,0 +1,40 @@
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:2271:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:2271:5: note: FIX-IT applied suggested code changes
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:2285:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:2285:5: note: FIX-IT applied suggested code changes
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:2299:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:2299:5: note: FIX-IT applied suggested code changes
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:3921:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:3921:7: note: FIX-IT applied suggested code changes
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20575:5: warning: Added loop label VITIS_LOOP_9_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < (1 << (8 << 1)); i++){
+    ^~~
+    VITIS_LOOP_9_1: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20575:5: note: FIX-IT applied suggested code changes
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20580:9: warning: Added loop label VITIS_LOOP_14_2:   [xilinx-label-all-loops]
+        for(int j = 0; j < 8; j++)
+        ^~~
+        VITIS_LOOP_14_2: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20580:9: note: FIX-IT applied suggested code changes
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20619:5: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < 8; i++)
+    ^~~
+    VITIS_LOOP_49_1: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20619:5: note: FIX-IT applied suggested code changes
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20634:5: warning: Added loop label VITIS_LOOP_64_2:   [xilinx-label-all-loops]
+    for(int i = 0; i < 8; i++)
+    ^~~
+    VITIS_LOOP_64_2: 
+/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.comp/hls/.autopilot/db/cordiccart2pol.pp.0.cpp:20634:5: note: FIX-IT applied suggested code changes

@@ -1,0 +1,29 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int(signed char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<16, false>::ap_bit_ref(ap_int_base<16, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_bit_ref<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>::af_bit_ref(ap_fixed_base<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>::ap_fixed_base<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_bit_ref<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>& ap_fixed_base<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>::operator=<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_bit_ref<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::af_bit_ref(ap_fixed_base<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator[](unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_bit_ref<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="af_bit_ref<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& af_bit_ref<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<8, false>(ap_bit_ref<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<16, false>::operator=(unsigned long long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>::operator[](unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<8, false>::ap_bit_ref(ap_int_base<8, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<8, 3, (ap_q_mode)0, (ap_o_mode)3, 1>::ap_fixed<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<8, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<16, false>& ap_bit_ref<16, false>::operator=<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1>(af_bit_ref<8, 3, true, (ap_q_mode)0, (ap_o_mode)3, 1> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="cordiccart2pol.cpp" line="66" pragmaType="unroll" parentfunction="cordiccart2pol" factor="-1" skip_exit_check="0"/>
+<pragma file="cordiccart2pol.cpp" line="51" pragmaType="unroll" parentfunction="cordiccart2pol" factor="-1" skip_exit_check="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

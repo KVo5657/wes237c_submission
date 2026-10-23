@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_3a/cordiccart2pol.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cordiccart2pol" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cordiccart2pol.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cordiccart2pol.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cordiccart2pol.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cordiccart2pol.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=r" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cordiccart2pol.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=theta" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

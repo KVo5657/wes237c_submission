@@ -1,0 +1,120 @@
+<ENTRY>
+{
+ "thisFile": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/cordiccart2pol.comp.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Oct 22 23:13:28 2026",
+ "timestampMillis": "1792736008735",
+ "buildStep": {
+  "cmdId": "059d9501-68f1-463a-8ce2-71f1c7bd5254",
+  "name": "vitis-run",
+  "logFile": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/logs/hls_run_package.log",
+  "commandLine": "vitis-run --mode hls --tcl /home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/export_cordiccart2pol.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:13:28 2026",
+ "timestampMillis": "1792736008736",
+ "status": {
+  "cmdId": "059d9501-68f1-463a-8ce2-71f1c7bd5254",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Oct 22 23:13:28 2026",
+ "timestampMillis": "1792736008736",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cordiccart2pol",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Oct 22 23:13:28 2026",
+ "timestampMillis": "1792736008737",
+ "buildStep": {
+  "cmdId": "a2c3ab36-69a7-467a-99eb-004875649e5f",
+  "name": "export_design",
+  "logFile": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a/cordiccart2pol.comp/hls/hls.log",
+  "commandLine": "export_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_1a"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:13:28 2026",
+ "timestampMillis": "1792736008738",
+ "status": {
+  "cmdId": "a2c3ab36-69a7-467a-99eb-004875649e5f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:14:32 2026",
+ "timestampMillis": "1792736072027",
+ "status": {
+  "cmdId": "a2c3ab36-69a7-467a-99eb-004875649e5f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Oct 22 23:14:32 2026",
+ "timestampMillis": "1792736072052",
+ "status": {
+  "cmdId": "059d9501-68f1-463a-8ce2-71f1c7bd5254",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

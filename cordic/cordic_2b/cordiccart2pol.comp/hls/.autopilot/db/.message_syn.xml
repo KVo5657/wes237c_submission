@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.17 seconds. CPU system time: 0.06 seconds. Elapsed time: 7.86 seconds; current allocated memory: 659.008 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;cordiccart2pol.cpp&apos; ..." resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-3325]" key="HLS 207-3325" tag="" content="use of overloaded operator &apos;*&apos; is ambiguous (with operand types &apos;data_t&apos; (aka &apos;ap_fixed&lt;32, 3&gt;&apos;) and &apos;float&apos;) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2373:1817)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2374:1898)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2375:1836)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2376:1853)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2377:2046)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2378:2091)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2379:2002)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2380:2047)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2381:2024)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2382:2069)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2383:2112)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4372]" key="HLS 207-4372" tag="" content="candidate function [with _AP_W = 32, _AP_I = 3, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0] (/software/common/Xilinx_Vitis/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h:2384:2121)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, float) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(float, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(double, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long double, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__float128, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(int, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(long long, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(__int128, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned int, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned long long, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, long double) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, __float128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, unsigned int) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, unsigned long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, unsigned long long) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-4370]" key="HLS 207-4370" tag="" content="built-in candidate operator*(unsigned __int128, unsigned __int128) (cordiccart2pol.cpp:53:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-2161]" key="HLS 200-2161" tag="" content="Finished Command csynth_design Elapsed time: 00:00:11; Allocated memory: 18.855 MB." resolution=""/>
+</Messages>

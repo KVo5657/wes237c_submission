@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/linux/ieng6/oce/9a/k1vo/Read_the_docs/project_files/project2/cordic/HLS/cordic_LUT/cordiccart2pol.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cordiccart2pol" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cordiccart2pol.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cordiccart2pol.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordiccart2pol" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cordiccart2pol.cpp:35:0" msg_body="Unrolling loop 'VITIS_LOOP_64_2' (cordiccart2pol.cpp:64:22) in function 'cordiccart2pol' completely with a factor of 8">
+        <args Factor="8" LoopLoc="cordiccart2pol.cpp:64:22" LoopName="VITIS_LOOP_64_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cordiccart2pol.cpp:35:0" msg_body="Unrolling loop 'VITIS_LOOP_49_1' (cordiccart2pol.cpp:49:22) in function 'cordiccart2pol' completely with a factor of 8">
+        <args Factor="8" LoopLoc="cordiccart2pol.cpp:49:22" LoopName="VITIS_LOOP_49_1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

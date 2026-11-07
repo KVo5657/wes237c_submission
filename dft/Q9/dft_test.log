@@ -1,0 +1,8 @@
+----------------------------------------------
+   RMSE(R)           RMSE(I)
+0.002138218143955 0.008000727742910
+----------------------------------------------
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1024

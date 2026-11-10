@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BindInfo>
-	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="lut_radius_bits_U" SOURCE="" VARIABLE="lut_radius_bits" MODULE="cordiccart2pol" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="32" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE="8 65536 1"/>
-	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="lut_theta_bits_U" SOURCE="" VARIABLE="lut_theta_bits" MODULE="cordiccart2pol" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="32" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE="8 65536 1"/>
-</BindInfo>

@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../ofdm_test.cpp in debug mode
+   Compiling ../../../../qpsk_decode.cpp in debug mode
+   Compiling ../../../../ofdm_recvr.cpp in debug mode
+   Compiling ../../../../fft.cpp in debug mode
+   Generating csim.exe
+Reading INPUTS
+Comparing with golden output
+Comparing against output data
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

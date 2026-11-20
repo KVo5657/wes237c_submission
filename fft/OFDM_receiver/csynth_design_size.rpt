@@ -1,0 +1,63 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 1,174        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 1,128        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |   778        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   776        | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   776        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   706        | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   706        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   706        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   706        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   714        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   712        | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   712        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |   711        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |   711        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |   723        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |   774        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-----------------------------+-------------------+----------------+---------------+---------------+---------------+---------------+
+| Function                    | Location          | Compile/Link   | Unroll/Inline | Array/Struct  | Performance   | HW Transforms |
++-----------------------------+-------------------+----------------+---------------+---------------+---------------+---------------+
+| + ofdm_receiver_axi         | ofdm_recvr.cpp:31 | 1,174          | 776           | 714           | 711           | 774           |
+|  + ofdm_receiver_core       | ofdm_recvr.cpp:12 | 1,131          | 742           | 672           | 671           | 727           |
+|   + demod                   | fft.cpp:22        | 1,100          |               |               |               |               |
+|    + fft                    | fft.cpp:30        | 1,028          |               |               |               |               |
+|     + bit_reverse           | fft.cpp:198       |   74 (2 calls) |               |               |               |               |
+|        reverse_address_bits | fft.cpp:174       |   30 (2 calls) |               |               |               |               |
+|       fft_stage_first       | fft.cpp:90        |   55           |               |               |               |               |
+|       fft_stages            | fft.cpp:106       |  664 (8 calls) |               |               |               |               |
+|       fft_stage_last        | fft.cpp:146       |   68           |               |               |               |               |
+|      qpsk_decode            | qpsk_decode.cpp:4 |   69           |               |               |               |               |
+|   + fft                     | fft.cpp:30        |                | 675           | 605           | 605           | 655           |
+|      bit_reverse            | fft.cpp:198       |                | 106 (2 calls) | 106 (2 calls) | 106 (2 calls) | 114 (2 calls) |
+|      fft_stage_first        | fft.cpp:90        |                |  27           |  27           |  27           |  31           |
+|      fft_stages             | fft.cpp:106       |                | 448 (8 calls) | 400 (8 calls) | 400 (8 calls) | 432 (8 calls) |
+|      fft_stage_last         | fft.cpp:146       |                |  37           |  37           |  37           |  41           |
++-----------------------------+-------------------+----------------+---------------+---------------+---------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

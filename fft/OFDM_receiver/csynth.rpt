@@ -1,0 +1,467 @@
+
+
+================================================================
+== Synthesis Summary Report of 'ofdm_receiver_axi'
+================================================================
++ General Information: 
+    * Date:           Thu Nov 19 17:35:49 2026
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        hls_ofdm_rx
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------+------+------+-----------+-----------+----------+-----------+-------+----------+-----------+-----------+-------------+-------------+-----+
+    |                     Modules                     | Issue|      |  Latency  |  Latency  | Iteration|           |  Trip |          |           |           |             |             |     |
+    |                     & Loops                     | Type | Slack|  (cycles) |    (ns)   |  Latency |  Interval | Count | Pipelined|   BRAM    |    DSP    |      FF     |     LUT     | URAM|
+    +-------------------------------------------------+------+------+-----------+-----------+----------+-----------+-------+----------+-----------+-----------+-------------+-------------+-----+
+    |+ ofdm_receiver_axi                              |     -|  0.00|  474180002|  4.742e+09|         -|  474180003|      -|        no|  119 (42%)|  128 (58%)|  20992 (19%)|  27632 (51%)|    -|
+    | o VITIS_LOOP_58_1                               |     -|  7.30|  474180000|  4.742e+09|     13548|          -|  35000|        no|          -|          -|            -|            -|    -|
+    |  + ofdm_receiver_core                           |     -|  0.04|      13528|  1.353e+05|         -|      13528|      -|        no|  115 (41%)|  128 (58%)|  18677 (17%)|  25167 (47%)|    -|
+    |   + fft*                                        |     -|  0.04|      11456|  1.146e+05|         -|       1026|      -|  dataflow|  106 (37%)|  128 (58%)|  17835 (16%)|  24064 (45%)|    -|
+    |    + bit_reverse                                |     -|  0.79|       1026|  1.026e+04|         -|       1026|      -|        no|          -|          -|     25 (~0%)|     66 (~0%)|    -|
+    |     o VITIS_LOOP_216_1                          |     -|  7.30|       1024|  1.024e+04|         2|          1|   1024|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stage_first                            |     -|  0.04|        520|  5.200e+03|         -|        520|      -|        no|          -|     8 (3%)|    1250 (1%)|    1678 (3%)|    -|
+    |     o VITIS_LOOP_94_1                           |     -|  7.30|        518|  5.180e+03|         8|          1|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages                                 |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1733 (1%)|    2273 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages_1                               |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1734 (1%)|    2282 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages_2                               |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1735 (1%)|    2285 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages_3                               |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1736 (1%)|    2287 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages_4                               |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1737 (1%)|    2289 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages_5                               |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1738 (1%)|    2291 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages_6                               |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1739 (1%)|    2292 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stages_7                               |     -|  0.04|       1043|  1.043e+04|         -|       1043|      -|        no|    2 (~0%)|    12 (5%)|    1740 (1%)|    2291 (4%)|    -|
+    |     o VITIS_LOOP_118_1_VITIS_LOOP_120_2         |    II|  7.30|       1041|  1.041e+04|        20|          2|    512|       yes|          -|          -|            -|            -|    -|
+    |    + fft_stage_last                             |     -|  0.04|        529|  5.290e+03|         -|        529|      -|        no|    2 (~0%)|   24 (10%)|    2632 (2%)|    3819 (7%)|    -|
+    |     o VITIS_LOOP_155_1                          |     -|  7.30|        527|  5.270e+03|        17|          1|    512|       yes|          -|          -|            -|            -|    -|
+    |    + bit_reverse_8                              |     -|  0.79|       1026|  1.026e+04|         -|       1026|      -|        no|          -|          -|     25 (~0%)|     66 (~0%)|    -|
+    |     o VITIS_LOOP_216_1                          |     -|  7.30|       1024|  1.024e+04|         2|          1|   1024|       yes|          -|          -|            -|            -|    -|
+    |   + ofdm_receiver_core_Pipeline_VITIS_LOOP_7_1  |     -|  0.89|       2068|  2.068e+04|         -|       2068|      -|        no|          -|          -|    736 (~0%)|     822 (1%)|    -|
+    |    o VITIS_LOOP_7_1                             |    II|  7.30|       2066|  2.066e+04|        21|          2|   1024|       yes|          -|          -|            -|            -|    -|
+    +-------------------------------------------------+------+------+-----------+-----------+----------+-----------+-------+----------+-----------+-----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++----------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface      | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|                |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++----------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem_in  | READ_ONLY  | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 64           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem_out | WRITE_ONLY | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 64           | 16          | 16          | BRAM=2            |
++----------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register    | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL        | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER        | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER      | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR      | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | in_data_1   | 0x10   | 32    | W      | Data signal of in_data           |                                                                      |
+| s_axi_control | in_data_2   | 0x14   | 32    | W      | Data signal of in_data           |                                                                      |
+| s_axi_control | out_data_1  | 0x1c   | 32    | W      | Data signal of out_data          |                                                                      |
+| s_axi_control | out_data_2  | 0x20   | 32    | W      | Data signal of out_data          |                                                                      |
+| s_axi_control | num_samples | 0x28   | 32    | W      | Data signal of num_samples       |                                                                      |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+---------------+
+| Argument    | Direction | Datatype      |
++-------------+-----------+---------------+
+| in_data     | in        | float const * |
+| out_data    | out       | unsigned int* |
+| num_samples | in        | int           |
++-------------+-----------+---------------+
+
+* SW-to-HW Mapping
++-------------+----------------+-----------+----------+---------------------------------------+
+| Argument    | HW Interface   | HW Type   | HW Usage | HW Info                               |
++-------------+----------------+-----------+----------+---------------------------------------+
+| in_data     | m_axi_gmem_in  | interface |          | channel=0                             |
+| in_data     | s_axi_control  | register  | offset   | name=in_data_1 offset=0x10 range=32   |
+| in_data     | s_axi_control  | register  | offset   | name=in_data_2 offset=0x14 range=32   |
+| out_data    | m_axi_gmem_out | interface |          | channel=0                             |
+| out_data    | s_axi_control  | register  | offset   | name=out_data_1 offset=0x1c range=32  |
+| out_data    | s_axi_control  | register  | offset   | name=out_data_2 offset=0x20 range=32  |
+| num_samples | s_axi_control  | register  |          | name=num_samples offset=0x28 range=32 |
++-------------+----------------+-----------+----------+---------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* All M_AXI Variable Accesses
++----------------+----------+----------------------+-----------+--------------+----------+-----------------+----------------------+------------+---------------------------------------------------------------------------------------------------------+
+| HW Interface   | Variable | Access Location      | Direction | Burst Status | Length   | Loop            | Loop Location        | Resolution | Problem                                                                                                 |
++----------------+----------+----------------------+-----------+--------------+----------+-----------------+----------------------+------------+---------------------------------------------------------------------------------------------------------+
+| m_axi_gmem_in  |          | ofdm_recvr.cpp:58:22 | read      | Fail         |          |                 |                      | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region.                  |
+| m_axi_gmem_in  | in_data  | ofdm_recvr.cpp:59:28 | read      | Widen Fail   |          | VITIS_LOOP_58_1 | ofdm_recvr.cpp:58:22 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem_in  | in_data  | ofdm_recvr.cpp:59:28 | read      | Inferred     | variable | VITIS_LOOP_58_1 | ofdm_recvr.cpp:58:22 |            |                                                                                                         |
+| m_axi_gmem_in  | in_data  | ofdm_recvr.cpp:60:28 | read      | Widen Fail   |          | VITIS_LOOP_58_1 | ofdm_recvr.cpp:58:22 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem_in  | in_data  | ofdm_recvr.cpp:60:28 | read      | Inferred     | variable | VITIS_LOOP_58_1 | ofdm_recvr.cpp:58:22 |            |                                                                                                         |
+| m_axi_gmem_out |          | ofdm_recvr.cpp:58:22 | write     | Fail         |          |                 |                      | 214-224    | Could not burst due to multiple potential writes to the same bundle in the same region.                 |
+| m_axi_gmem_out | out_data | ofdm_recvr.cpp:63:21 | write     | Widen Fail   |          | VITIS_LOOP_58_1 | ofdm_recvr.cpp:58:22 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0   |
+| m_axi_gmem_out | out_data | ofdm_recvr.cpp:63:21 | write     | Inferred     | variable | VITIS_LOOP_58_1 | ofdm_recvr.cpp:58:22 |            |                                                                                                         |
++----------------+----------+----------------------+-----------+--------------+----------+-----------------+----------------------+------------+---------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------+-----+--------+---------------+--------+----------+---------+
+| Name                                           | DSP | Pragma | Variable      | Op     | Impl     | Latency |
++------------------------------------------------+-----+--------+---------------+--------+----------+---------+
+| + ofdm_receiver_axi                            | 128 |        |               |        |          |         |
+|   empty_fu_295_p2                              |     |        | empty         | setgt  | auto     | 0       |
+|   xor_ln58_fu_301_p2                           |     |        | xor_ln58      | xor    | auto     | 0       |
+|   select_ln58_fu_307_p3                        |     |        | select_ln58   | select | auto_sel | 0       |
+|   empty_27_fu_326_p2                           |     |        | empty_27      | setgt  | auto     | 0       |
+|   sub_ln58_fu_331_p2                           |     |        | sub_ln58      | sub    | fabric   | 0       |
+|   select_ln58_1_fu_336_p3                      |     |        | select_ln58_1 | select | auto_sel | 0       |
+|   add_ln58_fu_348_p2                           |     |        | add_ln58      | add    | fabric   | 0       |
+|   icmp_ln58_fu_361_p2                          |     |        | icmp_ln58     | seteq  | auto     | 0       |
+|   add_ln58_1_fu_366_p2                         |     |        | add_ln58_1    | add    | fabric   | 0       |
+|   add_ln59_fu_390_p2                           |     |        | add_ln59      | add    | fabric   | 0       |
+|   add_ln59_1_fu_401_p2                         |     |        | add_ln59_1    | add    | fabric   | 0       |
+|   add_ln63_fu_412_p2                           |     |        | add_ln63      | add    | fabric   | 0       |
+|  + ofdm_receiver_core                          | 128 |        |               |        |          |         |
+|    add_ln24_fu_236_p2                          |     |        | add_ln24      | add    | fabric   | 0       |
+|    icmp_ln25_fu_241_p2                         |     |        | icmp_ln25     | seteq  | auto     | 0       |
+|   + fft                                        | 128 |        |               |        |          |         |
+|    + bit_reverse                               | 0   |        |               |        |          |         |
+|      icmp_ln216_fu_102_p2                      |     |        | icmp_ln216    | seteq  | auto     | 0       |
+|      add_ln216_fu_108_p2                       |     |        | add_ln216     | add    | fabric   | 0       |
+|    + fft_stage_first                           | 8   |        |               |        |          |         |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U5         | 2   |        | add3          | fadd   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U6         | 2   |        | add           | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U7         | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U8         | 2   |        | sub1          | fsub   | fulldsp  | 4       |
+|      add_ln94_fu_208_p2                        |     |        | add_ln94      | add    | fabric   | 0       |
+|    + fft_stages                                | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_232_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_238_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_259_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      xor_ln123_fu_265_p2                       |     |        | xor_ln123     | xor    | auto     | 0       |
+|      and_ln123_fu_271_p2                       |     |        | and_ln123     | and    | auto     | 0       |
+|      add_ln118_8_fu_277_p2                     |     |        | add_ln118_8   | add    | fabric   | 0       |
+|      select_ln118_fu_283_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U18         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U19         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U18         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U19         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U15    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U16        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U15    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U16        | 2   |        | add8          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U17        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U17        | 2   |        | sub8          | fsub   | fulldsp  | 4       |
+|      select_ln120_fu_355_p3                    |     |        | select_ln120  | select | auto_sel | 0       |
+|    + fft_stages_1                              | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_234_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_240_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_257_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      select_ln110_fu_263_p3                    |     |        | select_ln110  | select | auto_sel | 0       |
+|      add_ln118_7_fu_271_p2                     |     |        | add_ln118_7   | add    | fabric   | 0       |
+|      select_ln118_fu_277_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U31         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U32         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U31         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U32         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U28    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U29        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U28    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U29        | 2   |        | add7          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U30        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U30        | 2   |        | sub7          | fsub   | fulldsp  | 4       |
+|      add_ln120_fu_353_p2                       |     |        | add_ln120     | add    | fabric   | 0       |
+|    + fft_stages_2                              | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_234_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_240_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_257_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      select_ln110_fu_263_p3                    |     |        | select_ln110  | select | auto_sel | 0       |
+|      add_ln118_6_fu_271_p2                     |     |        | add_ln118_6   | add    | fabric   | 0       |
+|      select_ln118_fu_277_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U40         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U41         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U40         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U41         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U37    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U38        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U37    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U38        | 2   |        | add6          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U39        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U39        | 2   |        | sub6          | fsub   | fulldsp  | 4       |
+|      add_ln120_fu_353_p2                       |     |        | add_ln120     | add    | fabric   | 0       |
+|    + fft_stages_3                              | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_232_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_238_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_255_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      select_ln110_fu_261_p3                    |     |        | select_ln110  | select | auto_sel | 0       |
+|      add_ln118_5_fu_269_p2                     |     |        | add_ln118_5   | add    | fabric   | 0       |
+|      select_ln118_fu_275_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U49         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U50         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U49         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U50         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U46    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U47        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U46    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U47        | 2   |        | add5          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U48        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U48        | 2   |        | sub5          | fsub   | fulldsp  | 4       |
+|      add_ln120_fu_351_p2                       |     |        | add_ln120     | add    | fabric   | 0       |
+|    + fft_stages_4                              | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_234_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_240_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_257_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      select_ln110_fu_263_p3                    |     |        | select_ln110  | select | auto_sel | 0       |
+|      add_ln118_4_fu_271_p2                     |     |        | add_ln118_4   | add    | fabric   | 0       |
+|      select_ln118_fu_277_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U58         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U59         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U58         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U59         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U55    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U56        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U55    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U56        | 2   |        | add4          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U57        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U57        | 2   |        | sub4          | fsub   | fulldsp  | 4       |
+|      add_ln120_fu_353_p2                       |     |        | add_ln120     | add    | fabric   | 0       |
+|    + fft_stages_5                              | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_234_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_240_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_257_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      select_ln110_fu_263_p3                    |     |        | select_ln110  | select | auto_sel | 0       |
+|      add_ln118_3_fu_271_p2                     |     |        | add_ln118_3   | add    | fabric   | 0       |
+|      select_ln118_fu_277_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U67         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U68         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U67         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U68         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U64    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U65        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U64    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U65        | 2   |        | add3          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U66        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U66        | 2   |        | sub3          | fsub   | fulldsp  | 4       |
+|      add_ln120_fu_353_p2                       |     |        | add_ln120     | add    | fabric   | 0       |
+|    + fft_stages_6                              | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_234_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_240_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_257_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      select_ln110_fu_263_p3                    |     |        | select_ln110  | select | auto_sel | 0       |
+|      add_ln118_2_fu_271_p2                     |     |        | add_ln118_2   | add    | fabric   | 0       |
+|      select_ln118_fu_277_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U76         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U77         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U76         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U77         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U73    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U74        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U73    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U74        | 2   |        | add2          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U75        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U75        | 2   |        | sub2          | fsub   | fulldsp  | 4       |
+|      add_ln120_fu_353_p2                       |     |        | add_ln120     | add    | fabric   | 0       |
+|    + fft_stages_7                              | 12  |        |               |        |          |         |
+|      icmp_ln118_fu_228_p2                      |     |        | icmp_ln118    | seteq  | auto     | 0       |
+|      add_ln118_fu_234_p2                       |     |        | add_ln118     | add    | fabric   | 0       |
+|      icmp_ln120_fu_251_p2                      |     |        | icmp_ln120    | seteq  | auto     | 0       |
+|      select_ln110_fu_257_p3                    |     |        | select_ln110  | select | auto_sel | 0       |
+|      add_ln118_1_fu_265_p2                     |     |        | add_ln118_1   | add    | fabric   | 0       |
+|      select_ln118_fu_271_p3                    |     |        | select_ln118  | select | auto_sel | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U85         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U86         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U85         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U86         | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U82    | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U83        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      faddfsub_32ns_32ns_32_5_full_dsp_1_U82    | 2   |        | add           | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U83        | 2   |        | add1          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U84        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U84        | 2   |        | sub1          | fsub   | fulldsp  | 4       |
+|      add_ln120_fu_343_p2                       |     |        | add_ln120     | add    | fabric   | 0       |
+|    + fft_stage_last                            | 24  |        |               |        |          |         |
+|      icmp_ln155_fu_218_p2                      |     |        | icmp_ln155    | seteq  | auto     | 0       |
+|      add_ln155_fu_224_p2                       |     |        | add_ln155     | add    | fabric   | 0       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U97         | 3   |        | real_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U98         | 3   |        | real_imag     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U99         | 3   |        | imag_real     | fmul   | maxdsp   | 3       |
+|      fmul_32ns_32ns_32_4_max_dsp_1_U100        | 3   |        | imag_imag     | fmul   | maxdsp   | 3       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U91        | 2   |        | temp_R        | fsub   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U92        | 2   |        | temp_I        | fadd   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U93        | 2   |        | add           | fadd   | fulldsp  | 4       |
+|      fadd_32ns_32ns_32_5_full_dsp_1_U94        | 2   |        | add9          | fadd   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U95        | 2   |        | sub           | fsub   | fulldsp  | 4       |
+|      fsub_32ns_32ns_32_5_full_dsp_1_U96        | 2   |        | sub9          | fsub   | fulldsp  | 4       |
+|    + bit_reverse_8                             | 0   |        |               |        |          |         |
+|      icmp_ln216_fu_102_p2                      |     |        | icmp_ln216    | seteq  | auto     | 0       |
+|      add_ln216_fu_108_p2                       |     |        | add_ln216     | add    | fabric   | 0       |
+|   + ofdm_receiver_core_Pipeline_VITIS_LOOP_7_1 | 0   |        |               |        |          |         |
+|     icmp_ln7_fu_178_p2                         |     |        | icmp_ln7      | seteq  | auto     | 0       |
+|     add_ln7_fu_184_p2                          |     |        | add_ln7       | add    | fabric   | 0       |
+|     icmp_ln9_fu_217_p2                         |     |        | icmp_ln9      | setne  | auto     | 0       |
+|     icmp_ln9_1_fu_223_p2                       |     |        | icmp_ln9_1    | seteq  | auto     | 0       |
+|     or_ln9_fu_229_p2                           |     |        | or_ln9        | or     | auto     | 0       |
+|     fcmp_32ns_32ns_1_2_no_dsp_1_U116           |     |        | tmp_1         | fcmp   | auto     | 1       |
+|     and_ln9_fu_235_p2                          |     |        | and_ln9       | and    | auto     | 0       |
+|     icmp_ln9_2_fu_258_p2                       |     |        | icmp_ln9_2    | setne  | auto     | 0       |
+|     icmp_ln9_3_fu_264_p2                       |     |        | icmp_ln9_3    | seteq  | auto     | 0       |
+|     or_ln9_1_fu_270_p2                         |     |        | or_ln9_1      | or     | auto     | 0       |
+|     fcmp_32ns_32ns_1_2_no_dsp_1_U116           |     |        | tmp_3         | fcmp   | auto     | 1       |
+|     and_ln9_1_fu_274_p2                        |     |        | and_ln9_1     | and    | auto     | 0       |
+|     fcmp_32ns_32ns_1_2_no_dsp_1_U117           |     |        | tmp_5         | fcmp   | auto     | 1       |
+|     and_ln12_fu_280_p2                         |     |        | and_ln12      | and    | auto     | 0       |
+|     icmp_ln12_fu_302_p2                        |     |        | icmp_ln12     | setne  | auto     | 0       |
+|     icmp_ln12_1_fu_308_p2                      |     |        | icmp_ln12_1   | seteq  | auto     | 0       |
+|     or_ln12_fu_314_p2                          |     |        | or_ln12       | or     | auto     | 0       |
+|     fcmp_32ns_32ns_1_2_no_dsp_1_U117           |     |        | tmp_7         | fcmp   | auto     | 1       |
+|     and_ln12_1_fu_318_p2                       |     |        | and_ln12_1    | and    | auto     | 0       |
+|     icmp_ln15_fu_341_p2                        |     |        | icmp_ln15     | setne  | auto     | 0       |
+|     icmp_ln15_1_fu_347_p2                      |     |        | icmp_ln15_1   | seteq  | auto     | 0       |
+|     or_ln15_fu_353_p2                          |     |        | or_ln15       | or     | auto     | 0       |
+|     fcmp_32ns_32ns_1_2_no_dsp_1_U118           |     |        | tmp_9         | fcmp   | auto     | 1       |
+|     and_ln15_fu_357_p2                         |     |        | and_ln15      | and    | auto     | 0       |
+|     icmp_ln18_fu_380_p2                        |     |        | icmp_ln18     | setne  | auto     | 0       |
+|     icmp_ln18_1_fu_386_p2                      |     |        | icmp_ln18_1   | seteq  | auto     | 0       |
+|     or_ln18_fu_392_p2                          |     |        | or_ln18       | or     | auto     | 0       |
+|     fcmp_32ns_32ns_1_2_no_dsp_1_U118           |     |        | tmp_4         | fcmp   | auto     | 1       |
+|     and_ln18_fu_396_p2                         |     |        | and_ln18      | and    | auto     | 0       |
++------------------------------------------------+-----+--------+---------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------+-----------------+-----------+------+------+--------+-----------+------+---------+------------------+
+| Name                  | Usage           | Type      | BRAM | URAM | Pragma | Variable  | Impl | Latency | Bitwidth, Depth, |
+|                       |                 |           |      |      |        |           |      |         | Banks            |
++-----------------------+-----------------+-----------+------+------+--------+-----------+------+---------+------------------+
+| + ofdm_receiver_axi   |                 |           | 119  | 0    |        |           |      |         |                  |
+|   control_s_axi_U     | interface       | s_axilite |      |      |        |           |      |         |                  |
+|   gmem_in_m_axi_U     | interface       | m_axi     | 2    |      |        |           |      |         |                  |
+|   gmem_out_m_axi_U    | interface       | m_axi     | 2    |      |        |           |      |         |                  |
+|  + ofdm_receiver_core |                 |           | 115  | 0    |        |           |      |         |                  |
+|    dout_U             | ram_t2p         |           | 1    |      |        | dout      | auto | 1       | 2, 1024, 1       |
+|    xr_U               | ram_1p          |           | 2    |      |        | xr        | auto | 1       | 32, 1024, 1      |
+|    xi_U               | ram_1p          |           | 2    |      |        | xi        | auto | 1       | 32, 1024, 1      |
+|    xr_out_U           | ram_1p          |           | 2    |      |        | xr_out    | auto | 1       | 32, 1024, 1      |
+|    xi_out_U           | ram_2p          |           | 2    |      |        | xi_out    | auto | 1       | 32, 1024, 1      |
+|   + fft               |                 |           | 106  | 0    |        |           |      |         |                  |
+|     Temp_R_U          | ram_2p channel  | pipo      | 4    |      |        | Temp_R    | auto | 1       | 32, 1024, 2      |
+|     Temp_I_U          | ram_2p channel  | pipo      | 4    |      |        | Temp_I    | auto | 1       | 32, 1024, 2      |
+|     Stage1_R_U        | ram_t2p channel | pipo      | 4    |      |        | Stage1_R  | auto | 1       | 32, 1024, 2      |
+|     Stage1_I_U        | ram_t2p channel | pipo      | 4    |      |        | Stage1_I  | auto | 1       | 32, 1024, 2      |
+|     Stage2_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage2_R  | auto | 1       | 32, 1024, 2      |
+|     Stage2_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage2_I  | auto | 1       | 32, 1024, 2      |
+|     Stage3_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage3_R  | auto | 1       | 32, 1024, 2      |
+|     Stage3_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage3_I  | auto | 1       | 32, 1024, 2      |
+|     Stage4_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage4_R  | auto | 1       | 32, 1024, 2      |
+|     Stage4_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage4_I  | auto | 1       | 32, 1024, 2      |
+|     Stage5_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage5_R  | auto | 1       | 32, 1024, 2      |
+|     Stage5_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage5_I  | auto | 1       | 32, 1024, 2      |
+|     Stage6_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage6_R  | auto | 1       | 32, 1024, 2      |
+|     Stage6_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage6_I  | auto | 1       | 32, 1024, 2      |
+|     Stage7_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage7_R  | auto | 1       | 32, 1024, 2      |
+|     Stage7_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage7_I  | auto | 1       | 32, 1024, 2      |
+|     Stage8_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage8_R  | auto | 1       | 32, 1024, 2      |
+|     Stage8_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage8_I  | auto | 1       | 32, 1024, 2      |
+|     Stage9_R_U        | ram_2p channel  | pipo      | 4    |      |        | Stage9_R  | auto | 1       | 32, 1024, 2      |
+|     Stage9_I_U        | ram_2p channel  | pipo      | 4    |      |        | Stage9_I  | auto | 1       | 32, 1024, 2      |
+|     Stage10_R_U       | ram_t2p channel | pipo      | 4    |      |        | Stage10_R | auto | 1       | 32, 1024, 2      |
+|     Stage10_I_U       | ram_t2p channel | pipo      | 4    |      |        | Stage10_I | auto | 1       | 32, 1024, 2      |
+|    + fft_stages       |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real9_U        | rom_1p          |           | 1    |      |        | W_real9   | auto | 1       | 32, 512, 1       |
+|      W_imag1_U        | rom_1p          |           | 1    |      |        | W_imag1   | auto | 1       | 32, 512, 1       |
+|    + fft_stages_1     |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real10_U       | rom_1p          |           | 1    |      |        | W_real10  | auto | 1       | 32, 512, 1       |
+|      W_imag2_U        | rom_1p          |           | 1    |      |        | W_imag2   | auto | 1       | 32, 512, 1       |
+|    + fft_stages_2     |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real11_U       | rom_1p          |           | 1    |      |        | W_real11  | auto | 1       | 32, 512, 1       |
+|      W_imag3_U        | rom_1p          |           | 1    |      |        | W_imag3   | auto | 1       | 32, 512, 1       |
+|    + fft_stages_3     |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real12_U       | rom_1p          |           | 1    |      |        | W_real12  | auto | 1       | 32, 512, 1       |
+|      W_imag4_U        | rom_1p          |           | 1    |      |        | W_imag4   | auto | 1       | 32, 512, 1       |
+|    + fft_stages_4     |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real13_U       | rom_1p          |           | 1    |      |        | W_real13  | auto | 1       | 32, 512, 1       |
+|      W_imag5_U        | rom_1p          |           | 1    |      |        | W_imag5   | auto | 1       | 32, 512, 1       |
+|    + fft_stages_5     |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real14_U       | rom_1p          |           | 1    |      |        | W_real14  | auto | 1       | 32, 512, 1       |
+|      W_imag6_U        | rom_1p          |           | 1    |      |        | W_imag6   | auto | 1       | 32, 512, 1       |
+|    + fft_stages_6     |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real15_U       | rom_1p          |           | 1    |      |        | W_real15  | auto | 1       | 32, 512, 1       |
+|      W_imag7_U        | rom_1p          |           | 1    |      |        | W_imag7   | auto | 1       | 32, 512, 1       |
+|    + fft_stages_7     |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real16_U       | rom_1p          |           | 1    |      |        | W_real16  | auto | 1       | 32, 512, 1       |
+|      W_imag8_U        | rom_1p          |           | 1    |      |        | W_imag8   | auto | 1       | 32, 512, 1       |
+|    + fft_stage_last   |                 |           | 2    | 0    |        |           |      |         |                  |
+|      W_real_U         | rom_1p          |           | 1    |      |        | W_real    | auto | 1       | 32, 512, 1       |
+|      W_imag_U         | rom_1p          |           | 1    |      |        | W_imag    | auto | 1       | 32, 512, 1       |
++-----------------------+-----------------+-----------+------+------+--------+-----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+----------------------------------------------------------------------------------------+-----------------------------------------------------+
+| Type           | Options                                                                                | Location                                            |
++----------------+----------------------------------------------------------------------------------------+-----------------------------------------------------+
+| dataflow       |                                                                                        | fft.cpp:32 in fft                                   |
+| pipeline       | II=1                                                                                   | fft.cpp:96 in fft_stage_first                       |
+| pipeline       | II=1                                                                                   | fft.cpp:122 in fft_stages                           |
+| pipeline       | II=1                                                                                   | fft.cpp:156 in fft_stage_last                       |
+| loop_tripcount | min=512 max=512                                                                        | fft.cpp:158 in fft_stage_last                       |
+| inline         |                                                                                        | fft.cpp:176 in reverse_address_bits                 |
+| unroll         |                                                                                        | fft.cpp:184 in reverse_address_bits                 |
+| pipeline       | II=1                                                                                   | fft.cpp:217 in bit_reverse                          |
+| inline         | off                                                                                    | ofdm_recvr.cpp:17 in ofdm_receiver_core             |
+| interface      | m_axi port=in_data offset=slave bundle=gmem_in depth=70000 max_read_burst_length=64    | ofdm_recvr.cpp:33 in ofdm_receiver_axi, in_data     |
+| interface      | m_axi port=out_data offset=slave bundle=gmem_out depth=35000 max_write_burst_length=64 | ofdm_recvr.cpp:39 in ofdm_receiver_axi, out_data    |
+| interface      | s_axilite port=in_data bundle=control                                                  | ofdm_recvr.cpp:45 in ofdm_receiver_axi, in_data     |
+| interface      | s_axilite port=out_data bundle=control                                                 | ofdm_recvr.cpp:46 in ofdm_receiver_axi, out_data    |
+| interface      | s_axilite port=num_samples bundle=control                                              | ofdm_recvr.cpp:47 in ofdm_receiver_axi, num_samples |
+| interface      | s_axilite port=return bundle=control                                                   | ofdm_recvr.cpp:48 in ofdm_receiver_axi, return      |
++----------------+----------------------------------------------------------------------------------------+-----------------------------------------------------+
+
+
